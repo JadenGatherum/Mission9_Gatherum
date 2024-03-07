@@ -30,8 +30,11 @@ interface TeamProps {
 function Welcome() {
   return (
     <div>
-      <h1>Welcome to March Madness</h1>
-      <p>Below, you will find information about NCAA Basketball</p>
+      <h1>Colleges in NCAA Basketball</h1>
+      <p>
+        Below, you will find information about all the basketball teams in the
+        United States
+      </p>
     </div>
   );
 }
