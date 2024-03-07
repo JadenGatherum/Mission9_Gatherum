@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.team {
+  border: 1px solid #ccc; /* Add a solid border with a color */
+  padding: 10px; /* Add padding to create space between content and border */
+  margin-bottom: 10px; /* Add margin to create space between each team */
+}

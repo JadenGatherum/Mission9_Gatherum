@@ -28,7 +28,12 @@ interface TeamProps {
 
 // Functional component to display a welcome message
 function Welcome() {
-  return <h1>College Basketball Teams</h1>;
+  return (
+    <div>
+      <h1>Welcome to March Madness</h1>
+      <p>Below, you will find information about NCAA Basketball</p>
+    </div>
+  );
 }
 
 // Class-based component to render individual team details
@@ -37,10 +42,12 @@ class Team extends React.Component<TeamProps> {
     const oneTeam = this.props;
 
     return (
-      <div>
+      <div className="team">
         <h2>{oneTeam.school}</h2>
-        <h4>{oneTeam.name}</h4>
-        <h4>{oneTeam.state}</h4>
+        <p>{oneTeam.name}</p>
+        <p>
+          {oneTeam.city}, {oneTeam.state}
+        </p>
       </div>
     );
   }
